@@ -17,6 +17,10 @@ output "database_subnet_ids" {
   value = aws_subnet.database[*].id
 }
 
+output "database_subnet_group_ids" {
+  value = aws_db_subnet_group.default.name
+}
+
 # output "default_vpc_info" {
 #   value = data.aws_vpc.default
 # }
